@@ -1,0 +1,195 @@
+#primaryContainer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+#primaryContainerLeft{
+    background-color: #2C2C2C;
+    flex-grow: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+
+#primaryContainerRight{
+    background-color: #6C63FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+}
+
+#primaryContainerLeft div p:nth-child(1){/*olá*/
+    color: #fff;
+    font-family: 'Arial';
+    margin-bottom: 5px;
+}
+#primaryContainerLeft div p:nth-child(2){
+    color: #6C63FF;
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#primaryContainerLeft div p:nth-child(3){
+    color: #fff;
+    font-family: 'Arial';
+}
+
+#photoProfille{
+    width: 200px;
+}
+
+/*Estilizando section About Me*/
+#aboutMe{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#pictureFrame{
+   /*  position: relative;
+    left: -20px; */
+    border: solid 7px #6C63FF; 
+    width: 170px;
+}
+
+#photoAboutMe{
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    width: 170px;
+}
+
+#aboutMeTextContainer{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+#h2AboutMe{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Arial';
+    margin-bottom: 20px;
+}
+
+#h2Services{
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+#aboutMeTextContainer > p{
+    color: #71767A;
+    font-family: 'Arial';
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+/*estilização section services*/
+#services{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #2C2C2C;
+}
+
+#servicesItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.DevelopmentText{
+    z-index: 10;
+    position: relative;
+    top: 150px;
+    color: #fff;
+    font-family: 'Arial';
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.DevelopmentText:hover{
+    cursor: pointer
+}
+
+.DevelopmentText p{
+    text-align: center;
+}
+
+#webDevelopmentImg{
+    width: 300px;
+    opacity: .4;
+    background-color:rgba(0,0,0,.6);
+}
+
+#mobileDevelopmentImg{
+    width: 300px;
+    opacity: .4;
+    background-color:rgba(0,0,0,.6);
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#footer{
+    background-color:  #313131;
+    height: 400px;
+}
+
+/*Bounce*/
+.bounce:hover{
+    animation: bounce .6s;
+}
+
+@keyframes bounce{
+    10%, 40%, 70%{
+        transform: translateY(-3px);
+    }
+    25%, 55%, 85%{
+        transform: translateY(3px);
+    }
+}
+#red{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+#facebook, #instagram, #twitter, #linkedin, #github{
+    color: #fff;
+}
+
+#socialMedia{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#h3SocialMidea{
+    padding-top: 100px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Arial';
+}

@@ -1,30 +1,45 @@
+a {
+    color: #5fc28c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hello p{
+    padding-left: 20%;
+    margin-right: 10%;
+}
+
+#img-trybe {
+    padding: 30px 0;
+    width: 40%;
+}
+
 #icon-whatsapp{
     width: 20px;
 }
 
 #primaryContainer{
-    display: flex;
-    flex-direction: column;
     height: 200px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #primaryContainerLeft{
+    width: 100%;
     padding-top: 100px;
     background-color: #2C2C2C;
-    flex-grow: 7;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
+    padding-bottom: 100px;
 }
 
 
 #primaryContainerRight{
-    background-color: #6C63FF;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-grow: 3;
+    background-color: #5fc28c;
 }
 
 #primaryContainerLeft div p:nth-child(1){/*olá*/
@@ -33,7 +48,7 @@
     margin-bottom: 5px;
 }
 #primaryContainerLeft div p:nth-child(2){
-    color: #6C63FF;
+    color: #5fc28c;
     font-family: 'Arial';
     font-size: 30px;
     font-weight: bold;
@@ -45,7 +60,6 @@
 }
 
 #photoProfille{
-    width: 200px;
 }
 
 /*Estilizando section About Me*/
@@ -61,9 +75,8 @@
 }
 
 #pictureFrame{
-   /*  position: relative;
-    left: -20px; */
-    border: solid 7px #6C63FF; 
+    margin-top: 300px;
+    border: solid 7px #5fc28c; 
     width: 170px;
 }
 

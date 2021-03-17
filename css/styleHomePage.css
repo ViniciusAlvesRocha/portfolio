@@ -2,24 +2,51 @@
     display: flex;
     height: 400px;
 }
+a {
+    color: #5fc28c;
+    text-decoration: none;
+    font-weight: bold;
+}
+#hello p{
+    padding-left: 10%;
+    margin-right: 10%;
+}
+
+#img-trybe {
+    padding: 30px 0;
+    width: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#go-trybe {
+    position: relative;
+    z-index: 2;
+    right: 10px;
+    top: 100px;
+    font-family: 'Arial';
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transform: rotate(-30deg);
+}
 
 #primaryContainerLeft{
     background-color: #2C2C2C;
-    flex-grow: 7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
+    flex-grow: 2;
 }
 
-
 #primaryContainerRight{
-    background-color: #6C63FF;
+    background-color: #5fc28c;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 3;
+    flex-grow: 1;
 }
 
 #primaryContainerLeft div p:nth-child(1){/*olá*/
@@ -28,7 +55,7 @@
     margin-bottom: 5px;
 }
 #primaryContainerLeft div p:nth-child(2){
-    color: #6C63FF;
+    color: #5fc28c;
     font-family: 'Arial';
     font-size: 30px;
     font-weight: bold;
@@ -40,6 +67,9 @@
 }
 
 #photoProfille{
+    position: relative;
+    left: 50px;
+    z-index: 1;
     width: 200px;
 }
 
@@ -55,7 +85,7 @@
 }
 
 #pictureFrame{
-    border: solid 7px #6C63FF; 
+    border: solid 7px #5fc28c; 
     width: 170px;
 }
 

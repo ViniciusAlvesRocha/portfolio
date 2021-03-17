@@ -10,8 +10,8 @@ function isMobile() {
     resizeIconsFooter()
     
     //para remover o primaryContainerRight:
-    var primaryContainerRight = document.getElementById("primaryContainerRight")
-    primaryContainerRight.parentNode.removeChild(primaryContainerRight)
+    var primaryContainerRight = document.getElementById/* ("primaryContainerRight")
+    primaryContainerRight.parentNode.removeChild(primaryContainerRight) */
      
   }else{ //colocando folha de estilo para navegadores Web:
        

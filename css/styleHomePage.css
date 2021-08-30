@@ -140,46 +140,35 @@
       align-items: center;
   }
 
-  .service-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 180px;
-    width: 300px;
-    background-size: 300px 180px;
-    background-repeat: no-repeat;
-    box-shadow: inset 10px 10px 300px rgb(0, 0, 0);
-  }
-
   #webDevelopmentImg{
       width: 450px;
       opacity: .4;
       background-color:rgba(0,0,0,.6);
   }
 
-  h3{
-      font-size: 30px;
-      margin-bottom: 20px;
-      text-align: center;
+  h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  #footer{
-      background-color:  #313131;
-      height: 400px;
+  #footer {
+    background-color:  #313131;
+    height: 400px;
   }
 
   /*Bounce*/
-  .bounce:hover{
-      animation: bounce .6s;
+  .bounce:hover {
+    animation: bounce .6s;
   }
 
   @keyframes bounce{
-      10%, 40%, 70%{
-          transform: translateY(-3px);
-      }
-      25%, 55%, 85%{
-          transform: translateY(3px);
-      }
+    10%, 40%, 70%{
+        transform: translateY(-3px);
+    }
+    25%, 55%, 85%{
+        transform: translateY(3px);
+    }
   }
   #red{
       width: 50px;

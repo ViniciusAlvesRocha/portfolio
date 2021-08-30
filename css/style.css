@@ -43,3 +43,14 @@ main {
   padding-bottom: 100px;
   background-color: #2C2C2C;
 }
+
+.service-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 300px;
+  background-size: 300px 180px;
+  background-repeat: no-repeat;
+  box-shadow: inset 10px 10px 300px rgb(0, 0, 0);
+}

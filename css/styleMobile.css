@@ -117,40 +117,28 @@
       font-size: 15px;
   }
 
-  #servicesItems{
-    height: 400px;
+  #servicesItems {
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+  h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
-  #webDevelopmentImg{
-      width: 300px;
-      opacity: .4;
-      background-color:rgba(0,0,0,.6);
-  }
-
-  #mobileDevelopmentImg{
-      width: 300px;
-      opacity: .4;
-      background-color:rgba(0,0,0,.6);
-  }
-
-  h3{
-      font-size: 30px;
-      margin-bottom: 20px;
-      text-align: center;
-  }
-
-  #footer{
-      background-color:  #313131;
-      height: 400px;
+  #footer {
+    background-color:  #313131;
+    height: 400px;
   }
 
   /*Bounce*/
-  .bounce:hover{
-      animation: bounce .6s;
+  .bounce:hover {
+    animation: bounce .6s;
   }
 
   @keyframes bounce{

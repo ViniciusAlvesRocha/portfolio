@@ -6,48 +6,8 @@ function isMobile() {
 
 
   if(isMobile()){//colocando folha de estilo para dispositivos mobile:
-    insertStyleSheetMobile()
-    resizeIconsFooter()
-    
-    //para remover o primaryContainerRight:
-    var primaryContainerRight = document.getElementById/* ("primaryContainerRight")
-    primaryContainerRight.parentNode.removeChild(primaryContainerRight) */
-     
-  }else{ //colocando folha de estilo para navegadores Web:
-       
-    insertStyleSheetWebBrowser()
-    
+    resizeIconsFooter() 
   }
-
-  function insertStyleSheetMobile(){
-      //pegar o cabeçalho da página:
-    var tagHead = document.getElementsByTagName("head") 
-    
-    //criar TAG link do head:
-    var tagLink = document.createElement("link")
-    //configurando os atributos da TAG link
-    tagLink.setAttribute("id", "styleMobile")
-    tagLink.setAttribute("rel", "stylesheet")
-    tagLink.setAttribute("href", "./css/styleMobile.css")
-    console.log(tagHead)
-    //inserindo TAG link dentro de TAG head:
-    tagHead[0].appendChild(tagLink)
-  }
-
-  function insertStyleSheetWebBrowser(){
-    //pegar o cabeçalho da página:
-  var tagHead = document.getElementsByTagName("head") 
-  
-  //criar TAG link do head:
-  var tagLink = document.createElement("link")
-  //configurando os atributos da TAG link
-  tagLink.setAttribute("id", "styleWebBrowser")
-  tagLink.setAttribute("rel", "stylesheet")
-  tagLink.setAttribute("href", "./css/styleHomePage.css")
-  console.log(tagHead)
-  //inserindo TAG link dentro de TAG head:
-  tagHead[0].appendChild(tagLink)
-}
 
   function resizeIconsFooter(){
       var containerLinksSocialMedia = document.getElementById("socialMedia")

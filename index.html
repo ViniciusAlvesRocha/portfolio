@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius Rocha</title>
     <link rel="stylesheet" href="./css/resset.css">
+    <link rel="stylesheet" href="./css/styleMobile.css">
+    <link rel="stylesheet" href="./css/styleHomePage.css">
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <section id="primaryContainer">
@@ -32,7 +35,7 @@
             <h2 id="h2AboutMe">Sobre Mim</h2>
             <p>
                 Olá! Meu nome é Vinicius. Sou estudante da Trybe! 
-                Comecei a estudar na <a href="https://www.betrybe.com/" target="_blank">Trybe</a> no início do ano de 2021 e pertenço a turma 10, tribo B<br><br>
+                Comecei a estudar na <a href="https://www.betrybe.com/" target="_blank">Trybe</a> no início do ano de 2021 e pertenço a turma 11<br><br>
                 Veja o meu portfólio abaixo para ver meus trabalhos.<br> Para criação de qualquer projeto, basta
                 entrar em contato comigo.
             </p>
@@ -47,20 +50,30 @@
     <section id="services">
         <h2 id="h2Services">Serviços</h2>
         <div id="servicesItems">
-            <div id="webDevelopment">
-                <div class="DevelopmentText"> 
-                    <h3>Desenvolvemento Web</h3>
-                    <p>Criação de sites, blogs, e-commerces, landing pages...</p>
+            <a href="./pages/WebDevelopment.html">
+                <div id="webDevelopment" class="service-item">
+                    <div class="DevelopmentText"> 
+                        <h3>Desenvolvemento Web</h3>
+                        <p>Criação de sites, blogs, e-commerces, landing pages...</p>
+                    </div>
                 </div>
-                <a href="#"><img id="webDevelopmentImg" src="images/web_development.png"></a>
-            </div>
-            <div id="mobileDevelopment">
+            </a>
+
+            
+            <div id="mobileDevelopment" class="service-item">
                 <div class="DevelopmentText">
                     <h3>Desenvolvemento Mobile</h3>
                     <p>Criação de aplicativos Android</p>
                 </div>
-                <a href="#"><img id="mobileDevelopmentImg"src="images/mobile_development.png"></a>
             </div>
+
+            <a href="./pages/game-development.html" >
+                <div id="games-development" class="service-item">
+                    <div class="DevelopmentText">
+                        <h3>Jogos</h3>
+                    </div>
+                </div>
+            </a>
         </div>
     </section>
 

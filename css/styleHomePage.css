@@ -1,219 +1,241 @@
-#primaryContainer{
-    display: flex;
-    height: 400px;
-}
-a {
-    color: #5fc28c;
-    text-decoration: none;
-    font-weight: bold;
-}
-#hello p{
-    padding-left: 10%;
-    margin-right: 10%;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#img-trybe {
-    padding: 30px 0;
+.container {
+  padding: 0 7%;
+}
+
+@media all and (orientation: landscape) {
+  #primaryContainer{
+    display: flex;
+    height: 400px;
+  }
+  a {
+      color: #5fc28c;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  #hello p{
+      padding-left: 10%;
+      margin-right: 10%;
+  }
+
+  #img-trybe {
+      padding: 30px 0;
+      width: 300px;
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+
+  #go-trybe {
+      position: relative;
+      z-index: 2;
+      right: 10px;
+      top: 100px;
+      font-family: 'Arial';
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+      transform: rotate(-30deg);
+  }
+
+  #primaryContainerLeft{
+      background-color: #2C2C2C;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      flex-grow: 2;
+  }
+
+  #primaryContainerRight{
+      background-color: #5fc28c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+  }
+
+  #primaryContainerLeft div p:nth-child(1){/*olá*/
+      color: #fff;
+      font-family: 'Arial';
+      margin-bottom: 5px;
+  }
+  #primaryContainerLeft div p:nth-child(2){
+      color: #5fc28c;
+      font-family: 'Arial';
+      font-size: 30px;
+      font-weight: bold;
+  }
+
+  #primaryContainerLeft div p:nth-child(3){
+      color: #fff;
+      font-family: 'Arial';
+  }
+
+  #photoProfille{
+      position: relative;
+      left: 50px;
+      z-index: 1;
+      width: 200px;
+  }
+
+  /*Estilizando section About Me*/
+  #aboutMe{
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: #313131;
+      display: flex;
+      justify-content: center;
+      padding-left: 150px;
+      padding-right: 150px;
+  }
+
+  #pictureFrame{
+      border: solid 7px #5fc28c; 
+      width: 170px;
+  }
+
+  #photoAboutMe{
+      position: relative;
+      left: 25px;
+      bottom: 25px;
+      width: 170px;
+  }
+
+  #aboutMeTextContainer{
+      margin-left: 70px;
+      color: #fff;
+  }
+
+  #h2AboutMe{
+      font-size: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Arial';
+      margin-bottom: 20px;
+  }
+
+  #h2Services{
+      margin-bottom: 30px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Arial';
+  }
+
+  #aboutMeTextContainer > p{
+      color: #71767A;
+      font-family: 'Arial';
+      margin-bottom: 20px;
+      font-size: 15px;
+  }
+
+  #servicesItems{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .service-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
     width: 300px;
-    padding-left: 100px;
-    padding-right: 100px;
-}
+    background-size: 300px 180px;
+    background-repeat: no-repeat;
+    box-shadow: inset 10px 10px 300px rgb(0, 0, 0);
+  }
 
-#go-trybe {
-    position: relative;
-    z-index: 2;
-    right: 10px;
-    top: 100px;
+  #webDevelopmentImg{
+      width: 450px;
+      opacity: .4;
+      background-color:rgba(0,0,0,.6);
+  }
+
+  h3{
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+
+  #footer{
+      background-color:  #313131;
+      height: 400px;
+  }
+
+  /*Bounce*/
+  .bounce:hover{
+      animation: bounce .6s;
+  }
+
+  @keyframes bounce{
+      10%, 40%, 70%{
+          transform: translateY(-3px);
+      }
+      25%, 55%, 85%{
+          transform: translateY(3px);
+      }
+  }
+  #red{
+      width: 50px;
+      height: 50px;
+      background-color: red;
+  }
+  #facebook, #instagram, #twitter, #linkedin, #github{
+      color: #fff;
+  }
+
+  #socialMedia{
+      display: flex;
+      justify-content: space-between;
+      margin-left: 400px;
+      margin-right: 400px;
+  }
+
+  #h3SocialMidea{
+      padding-top: 100px;
+      margin-bottom: 60px;
+      font-size: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-family: 'Arial';
+  }
+
+  /* Web Development Pages */
+  .web-development-page {
+    background-color: rgb(44, 44, 44);
     font-family: 'Arial';
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    transform: rotate(-30deg);
-}
+    color: rgb(255, 255, 255);
+  }
 
-#primaryContainerLeft{
-    background-color: #2C2C2C;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    flex-grow: 2;
-}
+  .web-development-page h1 {
+    color: rgb(255, 255, 255);
+  }
 
-#primaryContainerRight{
-    background-color: #5fc28c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-
-#primaryContainerLeft div p:nth-child(1){/*olá*/
-    color: #fff;
-    font-family: 'Arial';
-    margin-bottom: 5px;
-}
-#primaryContainerLeft div p:nth-child(2){
-    color: #5fc28c;
-    font-family: 'Arial';
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#primaryContainerLeft div p:nth-child(3){
-    color: #fff;
-    font-family: 'Arial';
-}
-
-#photoProfille{
-    position: relative;
-    left: 50px;
-    z-index: 1;
-    width: 200px;
-}
-
-/*Estilizando section About Me*/
-#aboutMe{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #313131;
-    display: flex;
-    justify-content: center;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-#pictureFrame{
-    border: solid 7px #5fc28c; 
-    width: 170px;
-}
-
-#photoAboutMe{
-    position: relative;
-    left: 25px;
-    bottom: 25px;
-    width: 170px;
-}
-
-#aboutMeTextContainer{
-    margin-left: 70px;
-    color: #fff;
-}
-
-#h2AboutMe{
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Arial';
-    margin-bottom: 20px;
-}
-
-#h2Services{
-    margin-bottom: 30px;
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Arial';
-}
-
-#aboutMeTextContainer > p{
-    color: #71767A;
-    font-family: 'Arial';
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-/*estilização section services*/
-#services{
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #2C2C2C;
-}
-
-#servicesItems{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-.DevelopmentText{
-    z-index: 10;
-    position: relative;
-    top: 170px;
-    color: #fff;
-    font-family: 'Arial';
-    font-weight: bold;
-}
-
-.DevelopmentText:hover{
-    cursor: pointer
-}
-
-.DevelopmentText p{
+  .item-portfolio {
+    width: 25%;
+    height: 60vh;
+    background-color: rgb(78, 78, 78);
     text-align: center;
-}
+    margin-right: 20px;
+  }
 
-#webDevelopmentImg{
-    width: 450px;
-    opacity: .4;
-    background-color:rgba(0,0,0,.6);
-}
+  .item-portfolio a {
+      color: rgb(255, 255, 255);
+  }
 
-#mobileDevelopmentImg{
-    width: 450px;
-    opacity: .4;
-    background-color:rgba(0,0,0,.6);
-}
+  .item-portfolio img {
+    width: 100%;
+  }
 
-h3{
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#footer{
-    background-color:  #313131;
-    height: 400px;
-}
-
-/*Bounce*/
-.bounce:hover{
-    animation: bounce .6s;
-}
-
-@keyframes bounce{
-    10%, 40%, 70%{
-        transform: translateY(-3px);
-    }
-    25%, 55%, 85%{
-        transform: translateY(3px);
-    }
-}
-#red{
-    width: 50px;
-    height: 50px;
-    background-color: red;
-}
-#facebook, #instagram, #twitter, #linkedin, #github{
-    color: #fff;
-}
-
-#socialMedia{
+  .portfolio-items {
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
     display: flex;
-    justify-content: space-between;
-    margin-left: 400px;
-    margin-right: 400px;
-}
-
-#h3SocialMidea{
-    padding-top: 100px;
-    margin-bottom: 60px;
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Arial';
+  }
 }

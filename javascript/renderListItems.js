@@ -46,14 +46,14 @@ const projectItem = ({name, image, branch, pullRequest}) => {
     const paragraphBranchTextPortfolioItem = document.createElement("p");
     paragraphBranchTextPortfolioItem.classList.add("links-my-branch-pr");
     const anchorBranchTextPortfolioItem = document.createElement("a");
-    anchorBranchTextPortfolioItem.setAttribute("src", branch);
+    anchorBranchTextPortfolioItem.setAttribute("href", branch);
     anchorBranchTextPortfolioItem.innerText = "Branch com o meu código";
     paragraphBranchTextPortfolioItem.append(anchorBranchTextPortfolioItem);
 
     const paragraphPullRequestTextPortfolioItem = document.createElement("p");
     paragraphPullRequestTextPortfolioItem.classList.add("links-my-branch-pr");
     const anchorPullRequestTextPortfolioItem = document.createElement("a");
-    anchorPullRequestTextPortfolioItem.setAttribute("src", pullRequest);
+    anchorPullRequestTextPortfolioItem.setAttribute("href", pullRequest);
     anchorPullRequestTextPortfolioItem.innerText = "Pull Request";
     paragraphPullRequestTextPortfolioItem.append(anchorPullRequestTextPortfolioItem);
     
